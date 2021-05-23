@@ -1,0 +1,3 @@
+navbar = 1000;
+homepage = 500;
+planets = 400;
