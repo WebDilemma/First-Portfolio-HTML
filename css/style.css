@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+/* =================Global==================================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  background-color: rgba(0, 0, 0, 0.925);
+  color: white;
+  font-family: Roboto;
+  overflow-x: hidden !important;
+}
+
+.title {
+  width: 90vw;
+}
+
+.title > p {
+  margin-left: 10%;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  opacity: 0.6;
+  text-transform: uppercase;
+}
+
+/* =================Template==================================================================== */
+
+.template {
+  height: 100vh;
+  color: white;
+  z-index: 0;
+  position: relative;
+  /* scroll-snap-align: start; */
+  /* background: #3a7bd5; */
+}
+
+.template__container {
+  padding-top: 150px;
+}
+
+.template__items {
+  display: flex;
+  padding: 100px;
+}
+
+.template__item {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.template__itemContainer {
+  background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.2) 0%, rgba(21, 21, 21, 0) 100%);
+  backdrop-filter: blur(42px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 16px;
+  /* height: 400px; */
+  margin: 30px;
+  padding: 30px;
+}
+
+.template__itemContainer > img {
+  object-fit: contain;
+  width: 110%;
+  transform: translateX(-50px);
+  border-radius: 1em;
+}
+
+.template__itemContainer > h3 {
+  margin-top: 30px;
+  font-size: x-large;
+}
+
+.template__more {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+}
