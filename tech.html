@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      .container {
+        margin: 20px 0px;
+        max-width: 600px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .tech-card {
+        width: 150px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      h1 {
+        text-transform: capitalize;
+      }
+      p {
+        margin: 10px 0px;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-family: poppins;
+        color: rgb(34, 34, 34);
+      }
+
+      .background {
+        position: relative;
+        /* left: 4.26%;
+        right: 8.3%;
+        top: 0%;
+        bottom: 87.05%; */
+        /* 96 sp • H1 Heading */
+        text-align: center;
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 104px;
+        /* identical to box height, or 108% */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -3px;
+        color: #5243c2;
+        /* Text Shadow / White */
+        text-shadow: 0px 4px 0px #ffffff;
+      }
+      .highlight {
+        position: absolute;
+        left: 32%;
+        right: 43%;
+        top: 56.6%;
+        /* bottom: 87.05%; */
+        height: 24px;
+        background: #55efc4;
+        border-radius: 999px;
+        z-index: -1;
+      }
+      .pink {
+        color: rgb(199, 69, 123);
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="background">
+      <h1>
+        what
+        <span class="pink">
+          <span class="highlight"></span>
+          tech
+        </span>
+        we use?
+      </h1>
+    </div>
+    <div class="container">
+      <div class="tech-card">
+        <img src="./Assets/html5.svg" alt="html5" />
+        <p>HTML5</p>
+      </div>
+      <div class="tech-card">
+        <img src="./Assets/css3.svg" alt="css3" />
+        <p>CSS3</p>
+      </div>
+      <div class="tech-card">
+        <img src="./Assets/sass.svg" alt="sass" />
+        <p>sass</p>
+      </div>
+      <div class="tech-card">
+        <img src="./Assets/js.svg" alt="js" />
+        <p>javascript</p>
+      </div>
+      <div class="tech-card">
+        <img src="./Assets/react.svg" alt="react" />
+        <p>react</p>
+      </div>
+      <div class="tech-card">
+        <img src="./Assets/bootstrap.svg" alt="bootstrap" />
+        <p>bootstrap</p>
+      </div>
+      <div class="tech-card">
+        <img src="./Assets/git.svg" alt="git" />
+        <p>git</p>
+      </div>
+      <div class="tech-card">
+        <img src="./Assets/figma.svg" alt="figma" />
+        <p>figma</p>
+      </div>
+      <div class="tech-card">
+        <img src="./Assets/nodejs.svg" alt="node" />
+        <p>node.js</p>
+      </div>
+      <div class="tech-card">
+        <img src="./Assets/sql.svg" alt="sql" />
+        <p>mysql</p>
+      </div>
+      <div class="tech-card">
+        <img src="./Assets/mongodb.svg" alt="mongo" />
+        <p>mongodb</p>
+      </div>
+      <div class="tech-card">
+        <img src="./Assets/typescript.svg" alt="typescript" />
+        <p>typescript</p>
+      </div>
+    </div>
+  </body>
+</html>
