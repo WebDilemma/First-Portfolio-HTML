@@ -35,10 +35,11 @@
     <!-- --------------------------------HOME starts--------------------------------------- -->
     <div id="home" class="homepage section">
       <div class="tagline">
-        Grow <br />Like <br />
-        Hell
+        <p>Grow</p>
+        <p>like</p>
+        <p>hell</p>
       </div>
-      <div class="scroll">
+      <div class="scroll" id="scrollText">
         <div class="scroll__text">Scroll To Explore</div>
         <div class="scroll__image">
           <img
@@ -170,11 +171,13 @@
 
     <script>
       let goldBall = document.getElementById('circle_gold');
+      let scrollText = document.getElementById('scrollText');
       window.addEventListener('scroll', function () {
         let value = window.scrollY;
-        console.log(value);
         goldBall.style.bottom = `${value * 0.5}px`;
+        goldBall.style.transform = `rotate(${value * 0.5}deg)`;
         // goldBall.style.transform = `translate(-${value * 3}px,-${value * 1}px)`;
+        scrollText.style.opacity = `${1 - value * 0.002}`;
       });
     </script>
   </body>

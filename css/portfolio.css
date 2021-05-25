@@ -6,7 +6,7 @@ body {
 .portfolio {
   color: white;
   z-index: 0;
-  position: relative;
+  /* position: relative; */
 }
 
 .portfolio__container {
@@ -129,6 +129,9 @@ body {
   .portfolio__item {
     flex: 0 0 50%;
     max-width: 50%;
+  }
+  .portfolio__items {
+    padding: 4rem 4rem 0 4rem;
   }
   .portfolio__item:nth-of-type(4) {
     display: none;
