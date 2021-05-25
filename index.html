@@ -167,5 +167,15 @@
     </div>
 
     <!-- --------------------------------ABOUT ends--------------------------------------- -->
+
+    <script>
+      let goldBall = document.getElementById('circle_gold');
+      window.addEventListener('scroll', function () {
+        let value = window.scrollY;
+        console.log(value);
+        goldBall.style.bottom = `${value * 0.5}px`;
+        // goldBall.style.transform = `translate(-${value * 3}px,-${value * 1}px)`;
+      });
+    </script>
   </body>
 </html>

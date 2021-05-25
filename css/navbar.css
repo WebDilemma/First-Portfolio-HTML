@@ -57,6 +57,12 @@ nav > li {
   z-index: 1000;
 }
 
+@media (max-width: 1440px) {
+  .navbar {
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 1280px) {
   #circle_logo {
     width: 128px;
@@ -64,6 +70,7 @@ nav > li {
   }
   .navbar {
     font-size: 1rem;
+    /* display: none; */
   }
   #contact {
     display: none;

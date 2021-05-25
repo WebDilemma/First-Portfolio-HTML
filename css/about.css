@@ -6,8 +6,6 @@
   z-index: 0;
   position: relative;
   font-family: Poppins;
-  /* scroll-snap-align: start; */
-  /* background: #3a7bd5; */
 }
 
 .about__container {
@@ -34,10 +32,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: underline;
+  font-size: 1.5rem;
 }
 
 .info__title {
-  margin: 1rem 0px;
+  margin-bottom: 2rem;
   font-family: Roboto;
   font-weight: 400;
   font-size: 1.5rem;
@@ -51,7 +51,7 @@
   font-weight: 300;
   font-size: 3rem;
   line-height: 42px;
-  margin: 2rem 0;
+  margin-bottom: 2rem;
 }
 
 .info__description {
@@ -69,11 +69,7 @@
   flex-direction: column;
 }
 
-.about__seeMore {
-  text-decoration: underline;
-  font-size: 1.5rem;
-}
-
+/* =============== 1440px display ============================= */
 @media (max-width: 1440px) {
   .about__infoImg > img {
     object-fit: contain;
@@ -81,10 +77,11 @@
   }
   .info__title {
     font-size: 1rem;
+    margin-bottom: 1rem;
   }
   .info__headline {
     font-size: 2rem;
-    margin: 1rem 0;
+    margin-bottom: 1rem;
   }
   .info__description {
     font-size: 0.8rem;
@@ -92,8 +89,68 @@
   }
 }
 
+/* =============== 960px display ============================= */
+
+@media (max-width: 960px) {
+  .about__container {
+    flex-direction: column;
+    padding: 2rem 3rem;
+    align-items: center;
+  }
+  .about__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about__infoImg > img {
+    object-fit: contain;
+    height: 400px;
+    padding: 1rem;
+  }
+  .info__title {
+    font-size: 1rem;
+  }
+  .info__headline {
+    font-size: 2rem;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+  .info__description {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    text-align: center;
+  }
+  .about__infoText:last-of-type {
+    text-align: justify;
+  }
+  .about__infoContainer {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 1rem;
+  }
+  .about__seeMore {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* =============== 600px MOBILE display ============================= */
 @media (max-width: 600px) {
-  .about {
-    display: none;
+  .info__title {
+    font-size: 1rem;
+  }
+  .info__headline {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+  .info__description {
+    font-size: 0.6rem;
+    line-height: 1rem;
+    text-align: center;
+  }
+  .about__infoImg > img {
+    width: 80vw;
+    height: auto;
   }
 }

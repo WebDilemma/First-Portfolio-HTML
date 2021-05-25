@@ -8,12 +8,18 @@
   align-items: center;
   /* scroll-snap-align: start; */
   /* height: 100%; */
-  /* z-index: 500; */
+  z-index: 500;
 }
 
 .planet_wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-y: hidden;
   overflow-x: hidden !important;
-  z-index: 800;
+  z-index: 100;
 }
 
 #circle_blue {
@@ -31,7 +37,8 @@
   position: absolute;
   width: 182px;
   height: 182px;
-  top: 92%;
+  /* top: 92%; */
+  bottom: -8%;
   right: 5%;
   border-radius: 50%;
   background: radial-gradient(76.75% 76.75% at 70% 23.25%, #c21500 0%, #ffc500 100%);
@@ -65,6 +72,7 @@
   font-weight: bold;
   font-size: 9rem;
   color: #ffffff;
+  z-index: inherit;
 }
 
 .scroll {
@@ -85,9 +93,11 @@
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 29px;
-
+  z-index: inherit;
   color: #ffffff;
 }
+
+/* =============== 1440px display ============================= */
 
 @media (max-width: 1440px) {
   #circle_blue {
@@ -114,6 +124,8 @@
   }
 }
 
+/* =============== 1280px HD desktop display ============================= */
+
 @media (max-width: 1280px) {
   #circle_blue {
     width: 480px;
@@ -122,6 +134,7 @@
   #circle_pink {
     width: 190px;
     height: 190px;
+    overflow-x: hidden;
   }
   #circle_gold {
     width: 128px;
@@ -139,6 +152,8 @@
   }
 }
 
+/* =============== 600px MOBILE display ============================= */
+
 @media (max-width: 600px) {
   #circle_blue {
     left: -60%;
@@ -148,7 +163,7 @@
     display: none;
   }
   #circle_gold {
-    top: 95vh;
+    /* bottom: 95vh; */
   }
   #circle_green {
     width: 190px;

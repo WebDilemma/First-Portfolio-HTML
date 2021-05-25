@@ -4,12 +4,9 @@ body {
   background-color: rgba(0, 0, 0, 0.925);
 }
 .portfolio {
-  /* min-height: 100vh; */
   color: white;
   z-index: 0;
   position: relative;
-  /* scroll-snap-align: start; */
-  /* background: #3a7bd5; */
 }
 
 .portfolio__container {
@@ -32,9 +29,8 @@ body {
   backdrop-filter: blur(42px);
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 16px;
-  /* height: 400px; */
-  margin: 30px;
-  padding: 30px;
+  margin: 2rem;
+  padding: 2rem;
 }
 
 .portfolio__itemContainer > img {
@@ -53,6 +49,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .more__left,
@@ -96,8 +93,6 @@ body {
 }
 
 .tech__cards > .tech__extraText {
-  /* display: flex;
-  flex: 1; */
   width: 800px;
   padding: 3rem 0rem;
   font-family: Fira code;
@@ -128,6 +123,8 @@ body {
   letter-spacing: 0.2em;
 }
 
+/* =============== 1280px HD desktop display ============================= */
+
 @media (max-width: 1280px) {
   .portfolio__item {
     flex: 0 0 50%;
@@ -138,6 +135,8 @@ body {
   }
 }
 
+/* =============== 960px display ============================= */
+
 @media (max-width: 960px) {
   .portfolio__item {
     flex: 0 0 100%;
@@ -146,14 +145,23 @@ body {
   .portfolio__item:nth-of-type(3) {
     display: hidden;
   }
-}
-
-@media (max-width: 600px) {
+  .portfolio__itemContainer {
+    margin: 1.5rem 1rem;
+    padding: 1rem;
+  }
   .portfolio__items {
     padding: 4rem;
   }
+}
+
+/* =============== 600px MOBILE display ============================= */
+
+@media (max-width: 600px) {
   .more__left,
   .more__right {
     width: 100px;
+  }
+  .more__button {
+    padding: 0.5rem 1rem;
   }
 }
